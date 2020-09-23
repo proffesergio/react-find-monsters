@@ -1,0 +1,15 @@
+<header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            { this.state.string }
+          </p>
+          <button onClick={ () => this.setState({ string: 'Learning React...'} )}>
+          Learn React
+          </button>
+        </header>
+
+
+        // setting state value
+        this.setState({ searchFiled: event.target.value }, () => 
+            console.log(this.state)
+            );
